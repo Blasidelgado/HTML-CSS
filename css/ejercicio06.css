@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Arial';
+    background-color: lightgreen;
+    border: 1px solid grey;
+}
+
+button::before {
+    content: "Pasa por encima";
+}
+
+button:hover {
+    color: white;
+    background-color: green;
+}
+
+button:hover::before {
+    content: "";
+}
+
+button:hover::after {
+    content: "¡Hecho!";
+}
