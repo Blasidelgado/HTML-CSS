@@ -72,12 +72,12 @@ o usando la exclusividad de cascada de CSS.*/
     cursor: pointer;
 }
 
-.twitter-btn:hover, .twitter-btn > picture:hover {
+.twitter-btn:hover {
     background-color: #ddd;
 }
 
 .twitter-btn picture {
-    background-color: #eee;
+    background-color: inherit;
 }
 
 .separator {
