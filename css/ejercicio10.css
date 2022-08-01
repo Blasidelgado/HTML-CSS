@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    font-size: 16px;
+    --global-font-family: 'Rubik', sans-serif;
+    --global-text-color: #fff;
+    --global-primary-title-size: 2rem;
+    --global-color-sub-title: #68656E;
+    --global-link-color: #fff;
+    --global-body-color: #212529;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--global-body-color);
+}
+
+h1,h2,h3,h4, a {
+    font-family: var(--global-font-family);
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    font-weight: 500;
+}
+
+.subscribe {
+    position: absolute;
+    right: 10px;
+    justify-self: right;
+    background-color: #fff;
+    font-family: var(--global-font-family);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--global-body-color);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    gap: 3%;
+    margin: 2%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.description {
+    padding: 0px 20px;
+}
+
+.description h2 {
+    font-weight: 500;
+}
+
+.container {
+    margin: 20px 15px;
+}
+
+.call-to-action {
+    height: 70vh;
+    background-image: url(https://mountainly.com/wp-content/uploads/2021/06/Mountain-Biker.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.call-to-action a {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+aside {
+    width: 600px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10%;
+
+}
+
+article img {
+    width: 70px;
+    height: auto;
+}
+
+article h4 {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+article h3 {
+    font-size: .9rem;
+}
+
+@media (max-width: 639px) {
+    .main-container {
+        flex-direction: column-reverse;
+    }
+    
+    aside {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .call-to-action {
+        height: 40vh;
+    }
+}
