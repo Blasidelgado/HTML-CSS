@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <section id="jumbotron" class="container my-3">
+        <div class="container-fluid bg-light py-5 rounded-3">
+                <div class="p-4">
+                    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#miModal">Example button</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="miModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="miModalLabel">Título de mi modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Este es mi modal
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="container my-5">
+        <form>
+            <div class="mb-3">
+                <label for="input-nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="input-nombre">            
+            </div>
+            <div class="mb-3">
+                <label for="input-telefono" class="form-label">Teléfono</label>
+                <input type="number" class="form-control" id="input-telefono">
+            </div>
+            <div class="mb-3">
+              <label for="input-mensaje" class="form-label">Mensaje</label>
+              <input type="textarea" class="form-control" id="input-mensaje" style="height: 10rem;">
+            </div>
+            <button type="submit" class="btn btn-primary my-2">Enviar</button>
+          </form>
+    </section>
+    <section class="container mb-5">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+              <h3 class="card-title">Blas Ignacio Delgado</h3>
+              <h4 class="card-subtitle mb-2 text-muted h5">Desarrollador front-end en proceso</h4>
+              <p class="card-text">Hola! Estoy muy a gusto con su bootcamp y espero que pronto pueda conocer a mas personas como ustedes.</p>
+              <a href="mailto:blasidelgado@gmail.com" class="card-link">Envíame un email</a>
+            </div>
+          </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    const myModal = document.getElementById('miModal')
+        const myInput = document.getElementById('myInput')
+        
+        myModal.addEventListener('shown.bs.modal', () => {
+          myInput.focus()
+        })
+    </script>
+</body>
+</html>
